@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Arcane</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <center>
+      <div id="nav">
+        <div class="two tab"><a href="../about/index.html">About</a></div>
+        <div class="three tab">
+          <a href="../contact/index.html">Contact</a>
+        </div>
+      </div>
+    </center>
+    <div class="container">
+      <a href="../../index.html">
+        <img
+          src="../../assets/WhatsApp Image 2024-04-26 at 00.41.40_7ed65b49.jpg"
+          class="logo"
+          height="150px"
+          width="150px"
+      /></a>
+      <br /><br />
+      <h1
+        style="
+          display: inline;
+          margin-left: calc(45%);
+          margin-top: 0px;
+          font-size: 50px;
+        "
+      >
+        Arcane
+      </h1>
+      <ul class="notifications"></ul>
+      <br /><br />
+      <div class="playlist">
+        <h2>Play music!</h2>
+        <ul id="song-list">
+          <li data-src="Metro Boomin, The Weeknd, 21 Savage - Creepin.mp3">
+            <img src="hnv.jpeg" class="thumbnail" />
+            <span>Creepin</span>
+            <button class="play-button">&#9658;</button>
+          </li>
+          <li data-src="sicko.mp4">
+            <img src="astro.png" class="thumbnail" />
+            <span>SICKO MODE</span>
+            <button class="play-button">&#9658;</button>
+          </li>
+          <li data-src="fein.m4a" value="3">
+            <img src="utopia.jpg" class="thumbnail" />
+            <span>FE!N</span>
+            <button class="play-button">&#9658;</button>
+          </li>
+          <li data-src="box.mp3" value="4">
+            <img src="./box.jpg" class="thumbnail" />
+            <span>Box</span>
+            <button class="play-button">&#9658;</button>
+          </li>
+          <li data-src="natural.mp3" value="5">
+            <img src="./natural.jpg" class="thumbnail" />
+            <span>Natural</span>
+            <button class="play-button">&#9658;</button>
+          </li>
+          <li data-src="venom.mp3" value="6">
+            <img src="./venom.jpg" class="thumbnail" />
+            <span>Venom</span>
+            <button class="play-button">&#9658;</button>
+          </li>
+          <li data-src="into your arms.mp3" value="7">
+            <img src="./into your arms.jpg" class="thumbnail" />
+            <span>Into Your Arms</span>
+            <button class="play-button">&#9658;</button>
+          </li>
+          <li data-src="industry baby.mp3" value="8">
+            <img src="./industry baby.png" class="thumbnail" />
+            <span>Industry Baby</span>
+            <button class="play-button">&#9658;</button>
+          </li>
+          <li data-src="astronaut.mp3" value="9">
+            <img src="./astronaut.jpg" class="thumbnail" />
+            <span>Astronaut</span>
+            <button class="play-button">&#9658;</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <center><div id="np"></div></center>
+      <div class="controls">
+        <div onclick="previousSong() "><i class="bx bx-rewind"></i></div>
+        <div onclick="skipP()"><i class="bx bxs-skip-previous-circle"></i></div>
+        <div onclick="playPause()">
+          <i class="bx bx-pause" id="crtlIcon"></i>
+        </div>
+        <div onclick="skipF()"><i class="bx bxs-skip-next-circle"></i></div>
+        <div onclick="nextSong()"><i class="bx bx-fast-forward"></i></div>
+      </div>
+      <input type="range" value="0" id="progress" />
+      <span><div class="current-time" id="ct">00:00</div></span>
+      <span><div class="song-duration" id="sd">00:00</div></span>
+    </footer>
+    <audio id="audio-player" controls hidden>
+      Your browser does not support the audio element.
+    </audio>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <script src="app.js"></script>
+  </body>
+</html>

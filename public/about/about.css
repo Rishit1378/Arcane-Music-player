@@ -1,0 +1,129 @@
+.animated-border-box,
+.animated-border-box-glow {
+  padding: 50px;
+  width: 32%;
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  margin-left: calc(30%);
+}
+
+.animated-border-box-glow {
+  overflow: hidden;
+  filter: blur(20px);
+}
+
+.animated-border-box:before,
+.animated-border-box-glow:before {
+  content: "";
+  z-index: -2;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  position: absolute;
+  width: 99999px;
+  height: 99999px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-image: conic-gradient(
+    rgba(0, 0, 0, 0),
+    #1976ed,
+    rgba(0, 0, 0, 0) 25%
+  );
+  animation: rotate 4s linear infinite;
+}
+
+.animated-border-box:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 5px;
+  top: 5px;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background: #292a2e;
+  border-radius: 7px;
+}
+
+@keyframes rotate {
+  100% {
+    transform: translate(-50%, -50%) rotate(1turn);
+  }
+}
+
+.bodyabout {
+  margin: 0px;
+  margin-top: 0%;
+  background-color: black;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.space {
+  height: 550px;
+  margin-left: 20%;
+}
+
+.abtimg {
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  height: 60px;
+  margin-left: -40px;
+}
+
+h1 {
+  font-size: 50px;
+}
+.logo {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+#nav {
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+  margin-right: 15px;
+}
+.tab {
+  text-decoration: none;
+  border-radius: 100px;
+  color: white;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: rgba(0, 251, 255, 0.457);
+  height: 20px;
+  width: 80px;
+  margin-top: 10px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+.tab:hover {
+  background-color: #1db954;
+  font-size: 20px;
+  height: 27px;
+  width: 100px;
+  color: black;
+}
+a:hover {
+  color: white;
+  font-size: 20px;
+}
+.gap {
+  height: 500px;
+}
