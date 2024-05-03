@@ -15,3 +15,4 @@ HTML, Javascript, CSS
 To use the Basic Web Player, simply download or clone the repository to your local machine and open the ‘index.html’ file in a web browser.
 
 5: You can see a Live demo here-
+https://rishit1378.github.io/Arcane-Music-player/
